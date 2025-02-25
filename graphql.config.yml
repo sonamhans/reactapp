@@ -1,0 +1,10 @@
+schema: schema.graphql
+documents: '**/*.graphql'
+extensions:
+  endpoints:
+    Default GraphQL Endpoint:
+      url: 'https://graphit-808595275197.us-central1.run.app/'
+      headers:
+        user-agent: 'JS GraphQL
+      introspect: false
+
