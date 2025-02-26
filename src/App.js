@@ -1,6 +1,11 @@
 import { useQuery } from '@apollo/client'
-import { GET_ALL_STUDENTS, GET_ALL_CLASSROOMS, GET_ALL_TEACHERS} from './queries'
-import Student from './Student'
+import { GET_ALL_STUDENTS} from './queries'
+import AddStudent from './AddStudent';
+import StudentList from './StudentList';
+import AddClassroom from './AddClassroom';
+import ClassroomList from './ClassroomList';
+import AddTeacher from './AddTeacher';
+import TeacherList from './TeacherList';
 
 function App() {
 
@@ -11,16 +16,13 @@ const { loading, error, data } = useQuery(GET_ALL_STUDENTS)
 
   return (
     <div className="App">
-      <header className="App-header">
-
-       <div className="row">
-        All Students
-              {data?.getStudent.map(student =>
-
-                <Student student={student} key={student.id} />
-              )}
-            </div>
-      </header>
+            <h1>Demo React App </h1>
+            <AddStudent />
+            <StudentList />
+            <AddClassroom />
+            <ClassroomList />
+            <AddTeacher />
+            <TeacherList />
     </div>
   );
 }

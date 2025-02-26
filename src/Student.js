@@ -1,14 +1,20 @@
 import Classroom from './Classroom'
 
-const Student = ( { student } ) => {
+const Student = ({ student }) => {
   return (
     <div>
-     <div>
-        <h5> Student  : {student.name}</h5>
+      <div>
+        <h5>Student: {student.name}</h5>
         <p>
-          Age : {student.age} - Email : {student.email}
+          Age: {student.age} - Email: {student.email}
         </p>
-        <Classroom classroom={student.classroom} key={student.classroom.id} />
+
+
+        {student.classroom ? (
+          <Classroom classroom={student.classroom} key={student.classroom.id} />
+        ) : (
+          <p>No classroom assigned</p>
+        )}
         ---------
       </div>
     </div>
