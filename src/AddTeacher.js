@@ -56,15 +56,6 @@ const AddTeacher = () => {
         onChange={handleChange}
         required
       />
-      <label htmlFor="teacher-lastName">Last Name:</label>
-            <input
-              id="teacher-lastName"
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-        />
       
       <button type="submit">Add Teacher</button>
       {error && <p>Error: {error.message}</p>}
