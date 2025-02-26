@@ -4,7 +4,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
 import App from './App';
 
 const client = new ApolloClient({
-  uri: 'https://graphit-808595275197.us-central1.run.app/',
+  uri: 'https://graphql-336889241202.us-central1.run.app/',
   cache: new InMemoryCache()
 })
 
