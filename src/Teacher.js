@@ -6,11 +6,6 @@ const Teacher = ({ teacher }) => {
         <ul>
                 <li key={teacher.id}>
                   Teacher Name: {teacher.firstName}
-                  {teacher.classroom ? (
-                        <p>Classroom: {teacher.classroom.name}</p>
-                      ) : (
-                        <p>No classroom assigned</p>
-                  )}
                 </li>
               </ul>
 
