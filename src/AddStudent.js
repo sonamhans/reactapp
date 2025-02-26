@@ -33,42 +33,47 @@ const AddStudent = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="student-id">ID:</label>
       <input
+        id="student-id"
         type="number"
         name="id"
-        placeholder="ID"
         value={formData.id}
         onChange={handleChange}
         required
       />
+      <label htmlFor="student-name">Name:</label>
       <input
+        id="student-name"
         type="text"
         name="name"
-        placeholder="Name"
         value={formData.name}
         onChange={handleChange}
         required
       />
+      <label htmlFor="student-age">Age:</label>
       <input
+        id="student-age"
         type="number"
         name="age"
-        placeholder="Age"
         value={formData.age}
         onChange={handleChange}
         required
       />
+      <label htmlFor="classroom-email">Email:</label>
       <input
+        id="student-email"
         type="email"
         name="email"
-        placeholder="Email"
         value={formData.email}
         onChange={handleChange}
         required
       />
+      <label htmlFor="student-classroomId">Classroom ID:</label>
       <input
+        id="student-classroomId"
         type="number"
         name="classroomId"
-        placeholder="Classroom ID"
         value={formData.classroomId}
         onChange={handleChange}
         required

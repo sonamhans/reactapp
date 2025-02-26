@@ -31,34 +31,38 @@ const AddClassroom = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="classroom-id">ID:</label>
       <input
+        id="classroom-id"
         type="number"
         name="id"
-        placeholder="ID"
         value={formData.id}
         onChange={handleChange}
         required
       />
+      <label htmlFor="classroom-name">Name:</label>
       <input
+        id="classroom-name"
         type="text"
         name="name"
-        placeholder="Name"
         value={formData.name}
         onChange={handleChange}
         required
       />
+      <label htmlFor="classroom-code">Code:</label>
       <input
+        id="classroom-code"
         type="number"
         name="code"
-        placeholder="Code"
         value={formData.code}
         onChange={handleChange}
         required
       />
+      <label htmlFor="classroom-teacherId">Teacher ID:</label>
       <input
+        id="classroom-teacherId"
         type="number"
         name="teacherId"
-        placeholder="Teacher ID"
         value={formData.teacherId}
         onChange={handleChange}
         required
